@@ -81,3 +81,11 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
 export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangeListener = (callback) => onAuthStateChanged(auth, callback);
+
+/* on auth state change
+{
+  next: callback
+  error: error callback
+  complete: complete callback
+}
+*/
