@@ -3,30 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.9.0",
+    "@stripe/stripe-js": "^1.32.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.0.1",
     "firebase": "^9.8.3",
+    "netlify": "^12.0.0",
+    "netlify-cli": "^10.11.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
     "react-router-dom": "6",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^2.1.3",
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.3",
     "redux-thunk": "^2.4.1",
     "reselect": "^4.1.6",
-    "sass": "^1.52.1",
+    "sass": "^1.54.0",
+    "stripe": "^9.15.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "netlify"
   },
   "eslintConfig": {
     "extends": [
