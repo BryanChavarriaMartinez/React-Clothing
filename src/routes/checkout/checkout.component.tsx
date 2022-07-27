@@ -14,6 +14,7 @@ import {
   CheckoutHeader,
   HeaderBlock,
   Total,
+  EmptyMessage,
 } from './checkout.styles';
 
 const Checkout = () => {
@@ -42,8 +43,16 @@ const Checkout = () => {
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <Total>Total: ${cartTotal}</Total>
-      <PaymentForm />
+
+      {cartItems.length ? ( <Total>Total: ${cartTotal}</Total>
+        ) : (
+        <EmptyMessage />
+      )}
+
+      {cartItems.length ? ( <PaymentForm />
+        ) : (
+        <EmptyMessage>Add items to your cart.</EmptyMessage>
+      )}
     </CheckoutContainer>
   );
 };
