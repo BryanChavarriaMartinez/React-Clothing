@@ -39,7 +39,7 @@ const SignUpForm = () => {
       if ((error as AuthError).code === AuthErrorCodes.EMAIL_EXISTS) {
         alert('Cannot create user, email already in use');
       } else {
-        console.log('user creation encountered an error', error);
+        alert('User creation encountered an error');
       }
     }
   };
