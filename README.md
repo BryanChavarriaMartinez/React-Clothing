@@ -1,3 +1,5 @@
+Link to the page: https://cheerful-cocada-2e7bfa.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
